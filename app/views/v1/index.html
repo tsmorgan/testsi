@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  href: "/",
+  text: "Home"
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Self-isolation
+      </h1>
+
+      <p>
+        Find out about self-isolation. What it is, what you should do, when and how? And what support is available.
+      </p>
+
+      <ul>
+        <li>
+          When to self-isolate
+        </li>
+        <li>
+          How to self-isolate
+        </li>
+        <li>
+          Why to self-isolate
+        </li>
+      </ul>
+
+      <a href="/" class="nhsuk-button nhsuk-u-margin-bottom-8">
+        Start now
+      </a>
+
+    </div>
+
+  </div>
+{% endblock %}
