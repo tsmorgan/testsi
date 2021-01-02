@@ -1,0 +1,67 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'default.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Covid-19
+{% endblock %}
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px; nhsuk-u-padding-top-0">
+<!---Breadcrumb start-->
+<nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+    <div >
+		<ol class="nhsuk-breadcrumb__list ">
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="javascript:void(0)">NHS Covid-19</a></li>
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../index">Self-Isolation guidance</a></li>
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../others">Self-Isolation and others</a></li>
+		</ol>
+		<!---Mobile breadcrumb start-->
+		<p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="javascript:void(0)">NHS Covid-19</a></p>
+	</div>
+</nav>
+<div class="nhsuk-grid-row">
+	<div class="nhsuk-grid-column-two-thirds">
+		<h1>Living with, or looking after, a disabled person</h1>
+		<p>Where possible, arrange for anyone who is <a rel="external" href="https://www.nhs.uk/conditions/coronavirus-covid-19/people-at-higher-risk/whos-at-higher-risk-from-coronavirus/" class="govuk-link">clinically vulnerable</a> or <a href="https://www.gov.uk/government/publications/guidance-on-shielding-and-protecting-extremely-vulnerable-persons-from-covid-19/guidance-on-shielding-and-protecting-extremely-vulnerable-persons-from-covid-19" class="govuk-link">clinically extremely vulnerable</a> to move out of your home, to stay with friends or family for the duration of your home isolation period. If you cannot arrange for vulnerable people to move out of your home, stay away from them as much as possible, following the <a href="https://www.gov.uk/government/publications/guidance-on-shielding-and-protecting-extremely-vulnerable-persons-from-covid-19/guidance-on-shielding-and-protecting-extremely-vulnerable-persons-from-covid-19" class="govuk-link">shielding guidance</a>.</p>
+		<p>Those who are clinically vulnerable or clinically extremely vulnerable should be supported to take precautions to minimise their contact with other people in your household, regardless of whether others have <a href="#symptoms" class="govuk-link">symptoms</a> or not. They should minimise time spent in shared spaces such as kitchens, bathrooms and sitting areas. Any shared spaces should be well ventilated.</p>
+		<p>Aim to keep 2 metres (3 steps) away from the person(s) aged 70 or over, or clinically vulnerable, and encourage them to sleep in a different bed where possible. If they can, they should use a separate bathroom from the rest of the household. Make sure they use separate towels from the other people in your house, both for drying themselves after bathing or showering and for hand-hygiene purposes.</p>
+		<p>If you do share a toilet and bathroom with a person aged 70 or over, or clinically vulnerable, it is important that you clean the facilities every time you use them (for example, wiping surfaces you have come into contact with). Another tip is to consider drawing up a rota for bathing, with the older person using the facilities first.</p>
+		<p>If you share a kitchen with a person who is aged 70 or over, or clinically vulnerable, avoid using it while they are present. If they can, they should take their meals back to their room to eat. If you have one, use a dishwasher to clean and dry the family's used crockery and cutlery. If this is not possible, wash them using your usual washing up liquid and warm water and dry them thoroughly. If the person who is aged 70 or over, or clinically vulnerable, is using their own crockery and cutlery, remember to use a separate tea towel for drying these.</p>
+		<p>It will be difficult for some people to separate themselves from others at home. You should do your very best to follow this guidance and everyone in your household should:</p>
+		<ul>
+			<li>wash their hands more frequently, for 20 seconds, with soap and water or use hand sanitiser and avoid touching their face</li>
+			<li>regularly clean frequently touched surfaces</li>
+			<li>follow the <a href="https://www.gov.uk/government/publications/covid-19-stay-at-home-guidance/stay-at-home-guidance-for-households-with-possible-coronavirus-covid-19-infection" class="govuk-link">stay at home guidance for households with possible COVID-19 infection</a> which contains more detailed guidance on what to do about cleaning, disposal of waste, laundry and other useful information</li>
+		</ul>
+	</div>
+</div>
+<!---More-->
+	<div>
+		<nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation"
+			aria-label="Pages in this guide">
+			<h3 class="">More in <a href="../index">Self-Isolation Guidance</a></h3>
+			<ul class="nhsuk-list app-side-nav__list">
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="1">Living with children</a></li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="2">Living with, or looking after, a disabled person</a></li>
+				<li class="app-side-nav__item app-side-nav__item--current">Living with, or looking after, a person aged 70 or over, or a clinically vulnerable person</li>
+			</ul>
+		</nav>
+		</div>
+			<div class="nhsuk-review-date nhsuk-u-padding-top-5">
+			<p class="nhsuk-body-s">
+				Page last reviewed: 21 December 2020<br>
+				Next review due: 21 December 2020
+			</p>
+		</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}

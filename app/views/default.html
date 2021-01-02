@@ -1,0 +1,86 @@
+<!--
+  This is the main layout where you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+<!-- Extends the layout from /docs/views/template.html -->
+{% extends "template.html" %}
+<!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+{% endblock %}
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Covid-19
+{% endblock %}
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/header -->
+{% block header %}
+
+ {{ header({
+    "service": {
+        "name": "COVID-19",
+        "href": "/"
+      },
+      "showNav": "false",
+      "showSearch": "true"
+    })
+  }}
+
+<header class="nhsuk-header" role="banner">
+  <nav>
+    <div class="nhsuk-width-container" style="margin: 0 auto;">
+      <ul class="ia-new-nav">
+        <li class="ia-new-nav__item "><a class="ia-new-nav__link" href="javascript:void(0)">Testing</a></li>
+        <li class="ia-new-nav__item ia-new-nav__item--active"><a class="ia-new-nav__link" href="javascript:void(0)">Self Isolation</span></a></li>
+        <li class="ia-new-nav__item "><a class="ia-new-nav__link" href="javascript:void(0)">Menu 3</a></li>
+        <li class="ia-new-nav__item "><a class="ia-new-nav__link" href="javascript:void(0)">Menu 4</span></a></li>
+	  </ul>
+    </div>
+  </nav>
+</header>
+<!--<div class="nhsuk-global-alert" id="nhsuk-global-alert" role="complementary">
+  <div class="nhsuk-width-container">
+  <div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-full">
+  <div class="nhsuk-global-alert__content">
+  <div class="nhsuk-global-alert__message"><h2 class="nhsuk-heading-m nhsuk-u-margin-bottom-2">Coronavirus (COVID-19)</h2>
+  <p style="margin-bottom: 0;">
+    <p class="nhsuk-u-margin-bottom-0"><a href="/lab-7/a-to-z/coronavirus">Get the latest advice about coronavirus</a></p>
+  </div>
+  </div></div></div></div></div>-->
+{% endblock %}
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/footer -->
+{% block footer %}
+<div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+        <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+        <ul class="nhsuk-footer__list">
+          <li class="nhsuk-footer__list-item "><a class="nhsuk-footer__list-item-link nhsuk-body-m nhsuk-u-font-weight-bold" href="javascript:void(0);">Contact the NHS</a></li>
+          <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link nhsuk-body-m nhsuk-u-font-weight-bold" href="javascript:void(0);">About the NHS</a></li>
+          <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link nhsuk-body-m nhsuk-u-font-weight-bold" href="javascript:void(0);">NHS websites</a></li>
+          <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link nhsuk-body-m nhsuk-u-font-weight-bold" href="javascript:void(0);">NHS Jobs</a></li>
+        </ul>
+      </div>
+  <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list">
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="javascript:void(0);">Sitemap</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="javascript:void(0);">Accessibility</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="javascript:void(0);">Cookies</a></li>
+        <li class="nhsuk-footer__list-item"><a class="nhsuk-footer__list-item-link" href="javascript:void(0);">Our policies</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+</div>
+</footer>
+{% endblock %}
+{% block bodyEnd %}
+  {% block scripts %}
+    <!-- Custom JavaScript files can be added to this file -->
+    {% include "includes/scripts.html" %}
+    <!-- For adding page specific JavsScript -->
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+{% endblock %}
