@@ -1,0 +1,62 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'default.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Covid-19
+{% endblock %}
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px; nhsuk-u-padding-top-0">
+<!---Breadcrumb start-->
+<nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+    <div >
+		<ol class="nhsuk-breadcrumb__list ">
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="javascript:void(0)">NHS Covid-19</a></li>
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../index">Self-Isolation guidance</a></li>
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../how">How to self-isolate</a></li>
+		</ol>
+		<!---Mobile breadcrumb start-->
+		<p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="javascript:void(0)">NHS Covid-19</a></p>
+	</div>
+</nav>
+<div class="nhsuk-grid-row">
+	<div class="nhsuk-grid-column-two-thirds">
+		<h1>How long should you self isolate for?</h1>
+		<p>You should self-isolate for at least 10 days.</p>
+		<p>You may need to self-isolate for more than 10 days if you get symptoms while self-isolating or your symptoms do not go away.</p>
+	</div>
+</div>
+<!---More-->
+	<div>
+		<nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation"
+			aria-label="Pages in this guide">
+			<h3 class="">More in <a href="../how">How to self-isolate</a></h3>
+			<ul class="nhsuk-list app-side-nav__list">
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="1">What is self-isolation?</a></li>
+					<li class="app-side-nav__item app-side-nav__item--current">How long should you self isolate for?</li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="3">Financial support when you are self-isolating</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="4">Practical support when you are self-isolating</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="5">Emotional support when you are self-isolating</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="6">If your symtoms get worse</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="7">If you had Covid-19 before and now have it again</a></li>
+			</ul>
+		</nav>
+		</div>
+			<div class="nhsuk-review-date nhsuk-u-padding-top-5">
+			<p class="nhsuk-body-s">
+				Page last reviewed: 21 December 2020<br>
+				Next review due: 21 December 2020
+			</p>
+		</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}

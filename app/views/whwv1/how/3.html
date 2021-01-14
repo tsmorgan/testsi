@@ -1,0 +1,84 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'default.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Covid-19
+{% endblock %}
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px; nhsuk-u-padding-top-0">
+<!---Breadcrumb start-->
+<nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+    <div >
+		<ol class="nhsuk-breadcrumb__list ">
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="javascript:void(0)">NHS Covid-19</a></li>
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../index">Self-Isolation guidance</a></li>
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../how">How to self-isolate</a></li>
+		</ol>
+		<!---Mobile breadcrumb start-->
+		<p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="javascript:void(0)">NHS Covid-19</a></p>
+	</div>
+</nav>
+<div class="nhsuk-grid-row">
+	<div class="nhsuk-grid-column-two-thirds">
+		<h1>Financial support when you are self-isolating</h1>
+		<p>Tell your employer if you cannot work while you're self-isolating.</p>
+		<p>They should tell you if you're covered by their sick leave or special leave policy.</p>
+		<p>If you cannot get sick pay from your employer, you might be able to get Statutory Sick Pay or another type of financial support.</p>
+		<p>If you're on a low income and you're asked to self-isolate by NHS Test and Trace, you may be able to get a <a href="javascript:void(0)"> &#163;500 Test and Trace Support Payment</a>.</p>
+		<div class="nhsuk-inset-text">
+			<p>Find out more:</p>
+			<ul>
+				<li><a href="https://www.gov.uk/guidance/coronavirus-covid-19-what-to-do-if-youre-employed-and-cannot-work">GOV.UK: what to do if you're employed and cannot work</a></li>
+				<li><a href="https://www.gov.uk/government/publications/test-and-trace-support-payment-scheme-claiming-financial-support/claiming-financial-support-under-the-test-and-trace-support-payment-scheme">GOV.UK: claiming financial support under the Test and Trace Support Payment scheme</a>
+				</li>
+			</ul>
+		</div>
+		<h2>Get an isolation note to give to your employer</h2>
+		<p>You can get an isolation note to send to your employer as proof you need to be off work.</p>
+		<p>You do not need to get a note from a GP.</p>
+		<div class="nhsuk-action-link">
+			<a class="nhsuk-action-link__link" href="https://111.nhs.uk/isolation-note/">
+				<svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+					<path d="M0 0h24v24H0z" fill="none"></path>
+					<path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+				</svg>
+				<span class="nhsuk-action-link__text">Get an isolation note</span>
+			</a>
+		</div>
+	</div>
+</div>
+<!---More-->
+	<div>
+		<nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation"
+			aria-label="Pages in this guide">
+			<h3 class="">More in <a href="../how">How to self-isolate</a></h3>
+			<ul class="nhsuk-list app-side-nav__list">
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="1">What is self-isolation?</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="2">How long should you self isolate for?</a></li>
+					<li class="app-side-nav__item app-side-nav__item--current">Financial support when you are self-isolating</li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="4">Practical support when you are self-isolating</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="5">Emotional support when you are self-isolating</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="6">If your symtoms get worse</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="7">If you had Covid-19 before and now have it again</a></li>
+			</ul>
+		</nav>
+		</div>
+			<div class="nhsuk-review-date nhsuk-u-padding-top-5">
+			<p class="nhsuk-body-s">
+				Page last reviewed: 21 December 2020<br>
+				Next review due: 21 December 2020
+			</p>
+		</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}

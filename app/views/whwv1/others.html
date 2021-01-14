@@ -1,0 +1,73 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'default.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Covid-19
+{% endblock %}
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px; nhsuk-u-padding-top-0">
+<!---Breadcrumb start-->
+<nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+    <div >
+		<ol class="nhsuk-breadcrumb__list ">
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="javascript:void(0)">NHS Covid-19</a></li>
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="index">Self-Isolation guidance</a></li>
+		</ol>
+	<!---Mobile breadcrumb start-->
+	<p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="javascript:void(0)">NHS Covid-19</a></p>
+	</div>
+</nav>
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+	<h1>Self-isolation and Others</h1>
+	<p>Self-isolation help about children, disabled people and highly vunerable people</P>
+		<ul class="nhsuk-hub-key-links">
+			<li class="nhsuk-hub-key-links__list-item">
+				<a class="nhsuk-contents-list__link" href="others/1">
+					Living with children
+				</a>
+			</li>
+			<li class="nhsuk-hub-key-links__list-item">
+				<a class="nhsuk-contents-list__link" href="others/2">
+					Living with, or looking after, a disabled person
+				</a>
+			</li>
+			<li class="nhsuk-hub-key-links__list-item">
+				<a class="nhsuk-contents-list__link" href="others/3">
+					Living with, or looking after, a person aged 70 or over, or a clinically vulnerable person
+				</a>
+			</li>
+		</ul>
+    <div class="nhsuk-hub-after-key-links"></div>
+<!---More-->
+	<div>
+		<nav class="nhsuk-contents-list nhsuk-u-padding-top-8">
+			<h3 class="">More in <a href="index">Self-Isolation Guidance</a></h3>
+			<ul class="nhsuk-list app-side-nav__list">
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="when">When to self-isolate</a></li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="others">How to self-isolate</a></li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="why">Why self-isolate</a></li>
+				<li class="app-side-nav__item app-side-nav__item--current">Self-isolation and others</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="https://fsjjup.axshare.com/test.html">Covid-19 Knowledge test</a></li>
+			</ul>
+		</nav>
+		</div>
+			<div class="nhsuk-review-date nhsuk-u-padding-top-5">
+				<p class="nhsuk-body-s">
+					Page last reviewed: 21 December 2020<br>
+					Next review due: 21 December 2020
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}

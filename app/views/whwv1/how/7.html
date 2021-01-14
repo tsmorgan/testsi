@@ -1,0 +1,84 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'default.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Covid-19
+{% endblock %}
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px; nhsuk-u-padding-top-0">
+<!---Breadcrumb start-->
+<nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+    <div>
+		<ol class="nhsuk-breadcrumb__list ">
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="javascript:void(0)">NHS Covid-19</a></li>
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../index">Self-Isolation guidance</a></li>
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../how">How to self-isolate</a></li>
+		</ol>
+		<!---Mobile breadcrumb start-->
+		<p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="javascript:void(0)">NHS Covid-19</a></p>
+	</div>
+</nav>
+<div class="nhsuk-grid-row">
+	<div class="nhsuk-grid-column-two-thirds">
+		<h1>If you had Covid-19 before and now have it again</h1>
+		<p>If you get symptoms of coronavirus (COVID-19) again, you must self-isolate immediately and get a test.</p>
+		<p>The symptoms are a high temperature, a new, continuous cough or a loss or change to your sense of smell or taste.</p>
+		<p>You can <a href="https://www.gov.uk/get-coronavirus-test">get a test to check if you have coronavirus on GOV.UK</a>.</p>
+		<p>You should also self-isolate again if:</p>
+		<ul>
+			<li>someone you live with gets symptoms</li>
+			<li>someone in your support bubble gets symptoms and you were in close contact with them since their symptoms started or during the 48 hours before they started</li>
+		</ul>
+		<p>The person with symptoms should get a test.</p>
+		<details class="nhsuk-details" nhsuk-polyfilled="true" id="nhsuk-details0">
+			<summary class="nhsuk-details__summary" role="button" aria-controls="nhsuk-details__text0" tabindex="0" aria-expanded="false">
+				<span class="nhsuk-details__summary-text">What is a support bubble?</span>
+			</summary>
+			<div class="nhsuk-details__text" id="nhsuk-details__text0" aria-hidden="true">
+				<p>A support bubble is where someone who lives alone (or just with their children) can meet people from 1 other household.</p>
+				<p>Find out more about <a href="https://www.gov.uk/guidance/making-a-support-bubble-with-another-household">making a support bubble with another household on GOV.UK</a>.</p>
+			</div>
+		</details>
+		<p>You must self-isolate again even if you've had a positive test result for coronavirus before. You probably have some immunity to coronavirus but it's not clear how long it lasts.</p>
+		<div class="nhsuk-inset-text">
+			<span class="nhsuk-u-visually-hidden">Information:</span>
+			<p>Read more about <a href="/conditions/coronavirus-covid-19/self-isolation-and-treatment/when-to-self-isolate-and-what-to-do/">when to self-isolate and what to do</a>.
+			</p>
+		</div>
+	</div>
+</div>
+<!---More-->
+	<div>
+		<nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation"
+			aria-label="Pages in this guide">
+			<h3 class="">More in <a href="../how">How to self-isolate</a></h3>
+			<ul class="nhsuk-list app-side-nav__list">
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="1">What is self-isolation?</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="2">How long should you self isolate for?</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="3">Financial support when you are self-isolating</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="4">Practical support when you are self-isolating</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="5">Emotional support when you are self-isolating</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="6">If your symtoms get worse</a></li>
+					<li class="app-side-nav__item app-side-nav__item--current">If you had Covid-19 before and now have it again</li>
+			</ul>
+		</nav>
+		</div>
+			<div class="nhsuk-review-date nhsuk-u-padding-top-5">
+			<p class="nhsuk-body-s">
+				Page last reviewed: 21 December 2020<br>
+				Next review due: 21 December 2020
+			</p>
+		</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}
