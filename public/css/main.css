@@ -59,9 +59,14 @@ html {
 	}
 
 .bottom-links {
-	list-style-type: none;
+	list-style-type: none;	
 	padding-left: 0px;
 	}
+
+.cross-links {
+	margin-top: 60px;
+	}
+
 
 
 /* ==========================================================================
@@ -6766,7 +6771,7 @@ b {
 .app-side-nav__item--current {
   border-left: 4px solid #000;
   margin-left: -12px;
-  padding-left: 0px;
+  padding-left: 7px;
   color: #000 !important; }
 
 .app-side-nav__item {
