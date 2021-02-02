@@ -1,0 +1,66 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'default.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Covid-19
+{% endblock %}
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px; nhsuk-u-padding-top-0">
+<!---Breadcrumb start-->
+<nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+    <div >
+		<ol class="nhsuk-breadcrumb__list ">
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="javascript:void(0)">NHS Covid-19</a></li>
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../index">Self-Isolation guidance</a></li>
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../when">When to self-isolate</a></li>
+		</ol>
+		<!---Mobile breadcrumb start-->
+		<p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="javascript:void(0)">NHS Covid-19</a></p>
+	</div>
+</nav>
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-two-thirds">
+	<h1>You live with someone who has Covid-19 like symptoms or who has tested positive for Covid-19</h1>
+		<p>If someone you live with has tested positive and:</p>
+			<ul>
+				<li>they have symptoms &#8211; self-isolate for 10 days from when their symptoms started</li>
+				<li>they have not had symptoms &#8211; self-isolate for 10 days from when they had their test</li>
+			</ul>
+			<p>If they get symptoms while they're self-isolating, the 10 days restarts from when their symptoms started.</p>
+			<p>The 10 days does not restart if a different person you live with gets symptoms while you're self-isolating.</p>
+<!---More-->
+	<div>
+		<nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation"
+			aria-label="Pages in this guide">
+			<h3 class="">More in <a href="../when">When to self-isolate</a></h3>
+			<ul class="nhsuk-list app-side-nav__list">
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="1">You have been in close contact with someone who has Covid-19 like symptoms or who has tested positive for Covid-19</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="2">Someone in your support bubble has tested positive for Covid-19</a></li>
+					<li class="app-side-nav__item app-side-nav__item--current">You live with someone who has Covid-19 like symptoms or who has tested positive for Covid-19</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="4">You have symptoms that might mean you have Covid-19</li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="5">You have tested positive for Covid-19</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="6">You have been told to self-isolate by NHS Test and Trace</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="7">You have been told to self isolate by the NHS Covid-19 App</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="8">The NHS Covid-19 App has advised you that you have visited a venue whilst some with Covid-19 was there.</a></li>
+			</ul>
+		</nav>
+		</div>
+			<div class="nhsuk-review-date nhsuk-u-padding-top-5">
+			<p class="nhsuk-body-s">
+				Page last reviewed: 21 December 2020<br>
+				Next review due: 21 December 2020
+			</p>
+		</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}

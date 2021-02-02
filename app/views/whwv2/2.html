@@ -1,0 +1,159 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'existingnhs/layout-IA.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Heart Attack - Overview - NHS.UK
+{% endblock %}
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px; nhsuk-u-padding-top-0">
+<!---Breadcrumb start-->
+<nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+    <div >
+		<ol class="nhsuk-breadcrumb__list ">
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="javascript:void(0)">NHS Covid-19</a></li>
+		<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="index">Self-Isolation guidance</a></li>
+		</ol>
+		<!---Mobile breadcrumb start-->
+		<p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="javascript:void(0)">NHS Covid-19</a></p>
+	</div>
+</nav>
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-two-thirds">
+	<h1>How long to self-isolate</h1>
+		<p>How long you need to self-isolate depends if you&#x27;ve tested positive for coronavirus (COVID-19) or have been in close contact with someone who has.</p>
+		<div class="nhsuk-inset-text">
+			<span class="nhsuk-u-visually-hidden">Information:</span>
+			<p>If you have symptoms and have not had a test, stay at home and <a href="https://www.gov.uk/get-coronavirus-test">get a test to check if you have coronavirus on GOV.UK</a>.</p>
+		</div>
+		<div class="nhsuk-expander-group">
+			<details class="nhsuk-details nhsuk-expander">
+				<summary class="nhsuk-details__summary">
+					<span class="nhsuk-details__summary-text">If you&#x27;ve tested positive</span>
+				</summary>
+				<div class="nhsuk-details__text">
+					<h3>How long you need to self-isolate</h3>
+					<p>If you&#x27;ve tested positive and</p>
+					<ul>
+						<li>you have symptoms – self-isolate for 10 days from when your symptoms started</li>
+						<li>you have not had symptoms – self-isolate for 10 days from when you had the test</li>
+					</ul>
+					<p>If you get symptoms while you&#x27;re self-isolating, the 10 days restarts from when your symptoms started.</p>
+					<h3>When to stop self-isolating</h3>
+					<p>You can stop self-isolating after 10 days if either:</p>
+					<ul>
+						<li>you do not have any symptoms</li>
+						<li>you just have a cough or changes to your sense of smell or taste – these can last for weeks after the infection has gone</li>
+					</ul>
+					<h3>When to keep self-isolating</h3>
+					<p>Keep self-isolating if you have any of these symptoms after 10 days:</p>
+					<ul>
+						<li>a high temperature or feeling hot and shivery</li>
+						<li>a runny nose or sneezing</li>
+						<li>feeling or being sick</li>
+						<li>diarrhoea</li>
+					</ul>
+					<p>Only stop self-isolating when these symptoms have gone.</p>
+					<p>If you have diarrhoea or you&#x27;re being sick, stay at home until 48 hours after they&#x27;ve stopped.</p>
+				</div>
+			</details>
+			<details class="nhsuk-details nhsuk-expander">
+				<summary class="nhsuk-details__summary">
+					<span class="nhsuk-details__summary-text">If someone you live with has tested positive</span>
+				</summary>
+				<div class="nhsuk-details__text">
+					<h3>How long you need to self-isolate</h3>
+					<p>If someone you live with has tested positive and:</p>
+					<ul>
+						<li>they have symptoms – self-isolate for 10 days from when their symptoms started</li>
+						<li>they have not had symptoms – self-isolate for 10 days from when they had their test</li>
+					</ul>
+					<p>If they get symptoms while they&#x27;re self-isolating, the 10 days restarts from when their symptoms started.</p>
+					<p>The 10 days does not restart if a different person you live with gets symptoms while you&#x27;re self-isolating.</p>
+					<h3>When to stop self-isolating</h3>
+					<p>You can stop self-isolating after 10 days if you do not get any symptoms.</p>
+					<h3>What to do if you get symptoms</h3>
+					<p><a href="https://www.gov.uk/get-coronavirus-test">Get a test to check if you have coronavirus on GOV.UK</a> if you get symptoms while you&#x27;re self-isolating.</p>
+					<p>If your test is negative, keep self-isolating for the rest of the 10 days.</p>
+					<p>If your test is positive, the 10 days restarts from when your symptoms started. This will mean you&#x27;re self-isolating for more than 10 days overall.</p>
+				</div>
+			</details>
+			<details class="nhsuk-details nhsuk-expander">
+				<summary class="nhsuk-details__summary"><span class="nhsuk-details__summary-text">If someone in your support bubble has tested positive</span>
+			</summary>
+			<div class="nhsuk-details__text">
+				<h3>How long you need to self-isolate</h3>
+				<p>Self-isolate immediately if someone in your support bubble has tested positive and either:</p>
+				<ul>
+					<li>you&#x27;ve been in close contact with them since their symptoms started or during the 48 hours before their symptoms started</li>
+					<li>you&#x27;ve been in close contact with them since they had the test or during the 48 hours before their test (if they have not had symptoms)</li>
+				</ul>
+				<p>You need to self-isolate for 10 days from when you were last in contact with the person.</p>
+				<h3>When to stop self-isolating</h3>
+				<p>You can stop self-isolating after 10 days if you do not get any symptoms.</p>
+				<h3>What to do if you get symptoms</h3>
+				<p><a href="https://www.gov.uk/get-coronavirus-test">Get a test to check if you have coronavirus on GOV.UK</a> if you get symptoms while you&#x27;re self-isolating.</p>
+				<p>If your test is negative, keep self-isolating for the rest of the 10 days.</p>
+				<p>If your test is positive, the 10 days restarts from when your symptoms started. This will mean you&#x27;re self-isolating for more than 10 days overall.</p>
+			</div>
+			</details>
+			<details class="nhsuk-details nhsuk-expander">
+				<summary class="nhsuk-details__summary">
+					<span class="nhsuk-details__summary-text">If you’ve been told to self-isolate by NHS Test and Trace</span>
+				</summary>
+				<div class="nhsuk-details__text">
+					<p>Self-isolate immediately if either:</p>
+					<ul>
+						<li>you get a text, email or call from NHS Test and Trace telling you to self-isolate</li>
+						<li>you get an alert from the NHS COVID-19 app telling you to self-isolate</li>
+					</ul>
+					<p>You need to self-isolate for 10 days from when you were last in contact with the person who tested positive for coronavirus.</p>
+					<p><a href="https://www.nhs.uk/conditions/coronavirus-covid-19/testing-and-tracing/nhs-test-and-trace-if-youve-been-in-contact-with-a-person-who-has-coronavirus/">Find out what to do if you&#x27;ve been told to self-isolate by NHS Test and Trace</a></p>
+				</div>
+			</details>
+			</div>
+			<div class="nhsuk-inset-text">
+			  <span class="nhsuk-u-visually-hidden">Information: </span>
+				<h2>Help and support while you&#x27;re staying at home</h2>
+				<p>While you&#x27;re self-isolating:</p>
+				<ul><li>you can get help with everyday tasks, like collecting shopping or medicines, from an NHS volunteer </li>
+				<li>you might be able to get sick pay or other types of financial support if you&#x27;re not able to work</li>
+				</ul>
+				<p>Find out about <a href="/conditions/coronavirus-covid-19/self-isolation-and-treatment/help-and-financial-support-while-youre-self-isolating/">help and financial support while you&#x27;re self-isolating</a>.</p>
+			</div>
+		</div>
+	</div>
+	<!---More-->
+	<div>
+		<nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation"
+			aria-label="Pages in this guide">
+			<h3 class="">More in <a href="index">Self-Isolation Guidance</a></h3>
+			<ul class="nhsuk-list app-side-nav__list">
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="1">When to self-isolate and what to do</a></li>
+					<li class="app-side-nav__item app-side-nav__item--current">How long to self-isolate</li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="3">How to avoid spreading coronavirus to people you live with</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="4">How to treat your symptoms at home</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="5">Help and financial support while you're self-isolating</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="6">What to do if your symptoms get worse</a></li>
+					<li class="app-side-nav__item"><a class="app-side-nav__link" href="7">What to do if you get symptoms again</a></li>
+			</ul>
+		</nav>
+		</div>
+			<div class="nhsuk-review-date nhsuk-u-padding-top-5">
+			<p class="nhsuk-body-s">
+				Page last reviewed: 21 December 2020<br>
+				Next review due: 21 December 2020
+			</p>
+		</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}
