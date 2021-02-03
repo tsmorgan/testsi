@@ -6444,6 +6444,12 @@ b {
 .cross-links {
   margin-top: 60px; }
 
+.user-need {
+  color: #339900; }
+
+.org-need {
+  color: #cc6600; }
+
 .ia-new-nav {
   display: flex;
   list-style: none;
