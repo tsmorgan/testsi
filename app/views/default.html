@@ -16,29 +16,34 @@
 <!-- More info and code for the header can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/header -->
 {% block header %}
 
- {{ header({
-    "service": {
-        "name": "",
-        "href": "/"
+{{ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url"  : "",
+        "label" : "Health A-Z"
       },
-      "showNav": "false",
-      "showSearch": "true"
-    })
-  }}
+      {
+        'url' : '',
+        'label' : 'Live Well'
+      },
+      {
+        'url'  : '',
+        'label' : 'Care and support'
+      },
+      {
+        'url'  : '',
+        'label' : 'Health news'
+      },
+      {
+        'url' : '',
+        'label' : 'Services near you'
+      }
+    ]
+  })
+}}
 
-<header class="nhsuk-header" role="banner">
-  <nav>
-    <div class="nhsuk-width-container" style="margin: 0 auto;">
-      <ul class="ia-new-nav">
-		<li class="ia-new-nav__item ia-new-nav__item--active"><a class="ia-new-nav__link" href="javascript:void(0)">Health A-Z</span></a></li>
-		<li class="ia-new-nav__item "><a class="ia-new-nav__link" href="javascript:void(0)">Live Well</a></li>
-		<li class="ia-new-nav__item "><a class="ia-new-nav__link" href="javascript:void(0)">Care and support</a></li>
-		<li class="ia-new-nav__item "><a class="ia-new-nav__link" href="javascript:void(0)">Pregnancy</span></a></li>
-		<li class="ia-new-nav__item "><a class="ia-new-nav__link" href="javascript:void(0)">NHS Services</span></a></li>
-	  </ul>
-    </div>
-  </nav>
-</header>
 <!--<div class="nhsuk-global-alert" id="nhsuk-global-alert" role="complementary">
   <div class="nhsuk-width-container">
   <div class="nhsuk-grid-row">
