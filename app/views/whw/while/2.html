@@ -1,0 +1,86 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'default.html' %}
+<!--
+  In /views/layout.html you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Covid-19
+{% endblock %}
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<main class="nhsuk-main-wrapper" id="maincontent" style="padding-top: 0px !important;padding-bottom:0px; nhsuk-u-padding-top-0">
+<!---Breadcrumb start-->
+<nav class="nhsuk-u-margin-bottom-3" aria-label="Breadcrumb">
+    <div >
+		<ol class="nhsuk-breadcrumb__list ">
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Home</a></li>
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="">Health A to Z</a></li>
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../covidhub">Coronavirus (COVID-19)</a></li>
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../index">Self-isolation</a></li>
+			<li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="../how">How you should Self-isolate</a></li>
+		</ol>
+		<!---Mobile breadcrumb start-->
+		<p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="javascript:void(0)">NHS Covid-19</a></p>
+	</div>
+</nav>
+<div class="nhsuk-grid-row">
+	<div class="nhsuk-grid-column-two-thirds">
+	  <h1>How to look after yourself when Self-isolating</h1>
+		</div>
+			</div>
+				<div class="nhsuk-grid-row">
+				  <div class="nhsuk-grid-column-two-thirds">
+					<p>Staying at home and self-isolating can be difficult, stressful or inconvenient but by self-isolating you're saving lives. There are things you can do now to help you if you need to Self-isolate in the future.</p>
+					<h2>Getting food, medication and other supplies</h2>
+					<p>Food:</p>
+					<ul>
+						<li>set up an online account with your supermarket</li>
+						<li>have a small supply of basic essentials with long shelf lives ready</li>
+					</ul>
+					<p>Medication:</p>
+					<ul>
+						<li><a href="">contact your local council</a> and ask if your medication can be delivered by your local community hub</li>
+						<li>ask your local pharmacy if they can deliver your medication</li>
+						<li>sign up online to have your prescription delivered by Boots, Pharmacy2U or Well</li>
+					</ul>
+					<div class="nhsuk-inset-text">
+						<span class="nhsuk-u-visually-hidden">Information: </span>
+						<p>While you&#x27;re ill, ask a friend, family member or neighbour to check up on you. Arrange a regular call or talk though a doorway (not face to face) so they can check how you&#x27;re doing.</p>
+					</div>
+					<h3>Related information</h3>
+					<p><a href="../help">Help and support while self-isolating</a></p>
+					<p><a href="">What to do if your symtoms get very bad</a></p>
+				</div>
+			</div>
+<!--- Why prompt -->
+	{% include "why_prompt.html" %}
+<!--- end Why prompt -->
+<!---More-->
+	<div>
+		<nav class="nhsuk-contents-list nhsuk-u-padding-top-8" role="navigation"
+			aria-label="Pages in this guide">
+			<h3 class="">More in <a href="../how">How to Self-isolate</a></h3>
+			<ul class="nhsuk-list app-side-nav__list">
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="1">The rules for self-isolating</a></li>
+				<li class="app-side-nav__item app-side-nav__item--current">How to look after yourself at home when Self-isolating</li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="3">How to avoid spreading coronavirus to people you live with</a></li>
+				<li class="app-side-nav__item"><a class="app-side-nav__link" href="4">Breaking Self-isolation</a></li>
+			</ul>
+		</nav>
+		</div>
+			<div class="nhsuk-review-date nhsuk-u-padding-top-5">
+			<p class="nhsuk-body-s">
+				Page last reviewed: 21 December 2020<br>
+				Next review due: 21 December 2020
+			</p>
+		</div>
+		</div>
+	</div>
+</div>
+</main>
+{% endblock %}
